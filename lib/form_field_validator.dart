@@ -34,7 +34,7 @@ abstract class TextFieldValidator extends FieldValidator<String?> {
   }
 
   /// helper function to check if an input matches a given pattern
-  bool hasMatch(String pattern, String input, {bool caseSensitive: true}) =>
+  bool hasMatch(String pattern, String input, {bool caseSensitive = true}) =>
       RegExp(pattern, caseSensitive: caseSensitive).hasMatch(input);
 }
 
